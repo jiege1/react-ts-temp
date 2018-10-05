@@ -1,0 +1,10 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "no-unnecessary-type-assertion": true,
+    "no-any": true,
+    "curly":[true, "ignore-same-line"],
+    "no-eval": true,
+    "no-var-requires": true
+  }
+}

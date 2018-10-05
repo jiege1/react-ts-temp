@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "allowJs": true,
+    "baseUrl": "src",
+    "module": "commonjs",
+    "removeComments": true,
+    // 可以使用 Promise, async, await等新语法
+    "target": "es2017",
+    "jsx": "react"
+  },
+  "paths": {
+    "components": "components"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

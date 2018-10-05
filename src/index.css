@@ -1,0 +1,11 @@
+
+/**
+ 本文件写一些body全局样式
+ */
+
+body {
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
