@@ -2,11 +2,11 @@
 // import { ReactElement } from 'react';
 import * as React from 'react';
 
-export interface IProps {
+export interface ITestProps {
   name: string;
 }
 
-export default function(props: IProps) {
+export default function(props: ITestProps) {
   return (
     <div>
       {props.name}

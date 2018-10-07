@@ -2,7 +2,9 @@
   "extends": "tslint:recommended",
   "rules": {
     "no-constant-condition": true,
-    "quotemark": [true, "single", "avoid-escape"]
+    "quotemark": [true, "single", "avoid-escape"],
+    "no-console": false,
+    "no-namespace": false
   },
   "rulesDirectory": [
     "node_modules/tslint-eslint-rules/dist/rules"

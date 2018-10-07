@@ -1,9 +1,9 @@
-import Test, { hoc } from 'components/test';
+import Test, { hoc, ITestProps } from 'components/test';
 import * as React from 'react';
 import * as css from './index.less';
 
-// export interface ILayoutProps {
-//
+// interface ILayoutProps {
+//   testList: ITestProps[];
 // }
 
 interface ILayoutState {
@@ -13,14 +13,14 @@ interface ILayoutState {
 @hoc
 export default class Layout extends React.Component<{}, ILayoutState> {
 
-  constructor(props: {}) {
+  constructor(props) {
     super(props);
     this.state = {
       test: 1,
     };
   }
 
-  public componentDidMount(): void {
+  public componentDidMount() {
     const a = '123';
   }
 
