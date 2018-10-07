@@ -1,10 +1,10 @@
 {
   "extends": "tslint:recommended",
   "rules": {
-    "no-unnecessary-type-assertion": true,
-    "no-any": true,
-    "curly":[true, "ignore-same-line"],
-    "no-eval": true,
-    "no-var-requires": true
-  }
+    "no-constant-condition": true,
+    "quotemark": [true, "single", "avoid-escape"]
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ]
 }

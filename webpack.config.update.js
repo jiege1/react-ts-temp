@@ -4,7 +4,7 @@ const rootSrc = __dirname + '/src';
 
 module.exports = (config) => {
 
-  config = {
+  return {
     ...config,
     entry: {
       index: rootSrc + '/index.tsx',
@@ -39,7 +39,9 @@ module.exports = (config) => {
             use: [
               {
                 loader: 'css-loader',
-                options: {minimize: true}
+                options: {
+                  minimize: true
+                }
               }
             ],
           }),
@@ -104,5 +106,5 @@ module.exports = (config) => {
     },
   };
 
-  return config;
+  // return config;
 };

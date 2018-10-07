@@ -66,6 +66,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-react": "^7.11.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "tslint-eslint-rules": "^5.4.0",
     "typings-for-css-modules-loader": "^1.7.0"
   }
 }

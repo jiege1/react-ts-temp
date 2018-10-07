@@ -58,7 +58,7 @@ module.exports = {
     "WindVane": false, // 手淘环境
     "require": false, // 手淘环境
   },
-  "parser": "babel-eslint",
+  "parser": "typescript-eslint-parser",
   "rules": {
 // ES6 规则
 // http://gitlab.alibaba-inc.com/specs/style-guide/issues/50#96
@@ -92,7 +92,7 @@ module.exports = {
     ],
 
 
-    "no-undef": 2, // 未定义的变量
+    "no-undef": 1, // 未定义的变量
     "no-dupe-keys": 2, // 在创建对象字面量时不允许键重复 {a:1,a:1}
     "no-dupe-args": 2,// 函数参数不能重复
     "no-unused-expressions": 1, // 未使用的表达式
@@ -185,6 +185,11 @@ module.exports = {
         "balanced": true
       }
     }], // 注释斜线后面是否需要空格
+
+    /**
+     * ts 规范
+     */
+    "typescript/class-name-casing": 2,
 
     /**
      * React JSX 规范

@@ -1,28 +1,30 @@
+import Test, { hoc } from 'components/test';
 import * as React from 'react';
-import Test from 'components/test';
 import * as css from './index.less';
 
-export interface Props {
+// export interface ILayoutProps {
+//
+// }
 
+interface ILayoutState {
+  test: number;
 }
 
-interface State {
-  test: number,
-}
+@hoc
+export default class Layout extends React.Component<{}, ILayoutState> {
 
-export default class Layout extends React.Component<Props, State> {
-
-  constructor(props: Props) {
+  constructor(props: {}) {
     super(props);
     this.state = {
       test: 1,
     };
   }
 
-  componentDidMount() {
+  public componentDidMount(): void {
+    const a = '123';
   }
 
-  render() {
+  public render() {
     return (
       <div className={css.layout}>
         react-temp
