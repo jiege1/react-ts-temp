@@ -2,9 +2,15 @@
   "extends": "tslint:recommended",
   "rules": {
     "no-constant-condition": true,
-    "quotemark": [true, "single", "avoid-escape"],
+    "quotemark": [true, "single", "avoid-escape", "jsx-double"],
     "no-console": false,
-    "no-namespace": false
+    "ordered-imports": false,
+    "no-namespace": false,
+    "object-literal-sort-keys": false,
+    "arrow-parens": false,
+    "interface-name": [true, "never-prefix"],
+    "object-literal-key-quotes": [true, "as-needed"],
+    "no-trailing-whitespace": [false, "ignore-comments"]
   },
   "rulesDirectory": [
     "node_modules/tslint-eslint-rules/dist/rules"

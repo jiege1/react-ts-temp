@@ -92,7 +92,7 @@ module.exports = {
     ],
 
 
-    "no-undef": 1, // 未定义的变量
+    "no-undef": 0, // 未定义的变量
     "no-dupe-keys": 2, // 在创建对象字面量时不允许键重复 {a:1,a:1}
     "no-dupe-args": 2,// 函数参数不能重复
     "no-unused-expressions": 1, // 未使用的表达式
