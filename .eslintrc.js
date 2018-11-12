@@ -65,6 +65,7 @@ module.exports = {
     "prefer-const": 0,
     "no-const-assign": 2,
     "no-class-assign": 2,
+    "no-param-reassign": 0,
     "no-dupe-class-members": 2,
     "rest-spread-spacing": 2,
     "no-duplicate-imports": 2,
@@ -91,7 +92,6 @@ module.exports = {
       }
     ],
 
-
     "no-undef": 0, // 未定义的变量
     "no-dupe-keys": 2, // 在创建对象字面量时不允许键重复 {a:1,a:1}
     "no-dupe-args": 2,// 函数参数不能重复
@@ -107,6 +107,7 @@ module.exports = {
     "no-extend-native": 2, // 禁止通过 prototype 给原生对象增加额外方法。
     "no-native-reassign": 2, // 阻止复写内置类型
     "no-return-assign": 2, // 是否允许 return 返回表达式
+    "no-return-await": 0, // 是否允许 await 返回表达式
     "no-constant-condition": [2, {
       "checkLoops": false
     }], // 提示拒绝使用已经明确意义的判断条件 if (true)
@@ -172,7 +173,6 @@ module.exports = {
     "semi-spacing": 2, // 分号后面留空
     "keyword-spacing": 2, // 关键词后面加空格
     "space-before-blocks": 2, // 块级代码加空格
-    "space-before-function-paren": [2, "never"], // 函数名与括弧之间空格
     "space-infix-ops": 2, // 操作符之间的空格
     "spaced-comment": [1, "always", {
       "line": {
@@ -190,6 +190,8 @@ module.exports = {
      * ts 规范
      */
     "typescript/class-name-casing": 2,
+    "typescript/member-ordering": 0,
+    // "typescript/no-namespace": 0,
 
     /**
      * React JSX 规范
@@ -219,6 +221,6 @@ module.exports = {
         "/^render.+$/",
         "render"
       ]
-    }]
+    }],
   }
 };
