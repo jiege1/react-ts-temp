@@ -56,7 +56,7 @@ module.exports = {
     "$": false, // Kimi 全局变量
     "goldlog": true, // 黄金令箭
     "WindVane": false, // 手淘环境
-    "require": false, // 手淘环境
+    "require": true, // 手淘环境
   },
   "parser": "typescript-eslint-parser",
   "rules": {
@@ -64,6 +64,7 @@ module.exports = {
 // http://gitlab.alibaba-inc.com/specs/style-guide/issues/50#96
     "prefer-const": 0,
     "no-const-assign": 2,
+    "no-undefined": 0,
     "no-class-assign": 2,
     "no-param-reassign": 0,
     "no-dupe-class-members": 2,
